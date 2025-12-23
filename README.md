@@ -1,23 +1,28 @@
 # Smart Email Classifier
-# Smart Email Classification – Milestone 2
+
+## Smart Email Classification – Milestone 2
 
 ## Objective
-Build an ML model to classify customer emails into categories using NLP.
+Build an NLP-based machine learning model to classify customer emails into predefined categories.
 
 ## Steps Implemented
-- Loaded cleaned dataset from Milestone 1
-- Converted text data using TF-IDF Vectorizer
-- Split data into train and test sets
-- Trained Logistic Regression model
-- Evaluated model using accuracy and classification report
+- Loaded cleaned dataset generated in Milestone 1
+- Converted email text into numerical features using TF-IDF Vectorizer
+- Split the dataset into training and testing sets
+- Trained baseline classification models
+- Evaluated models using accuracy and classification report
 
-## Model Used
-- Logistic Regression
-- TF-IDF features (max_features=5000)
+## Models Used
+- Logistic Regression (Primary model)
+- Multinomial Naive Bayes (Baseline comparison)
+- TF-IDF features (max_features = 5000)
 
 ## Results
-- Accuracy: ~76.8%
-- Model shows stable and generalized performance across categories
+- Logistic Regression Accuracy: ~76.8%
+- Naive Bayes Accuracy: ~60%
+
+Logistic Regression outperformed Naive Bayes and was selected as the final model for Milestone 2.  
+The model shows stable and generalized performance across most categories.
 
 ## Files
 - notebooks/data_preprocessing.ipynb
