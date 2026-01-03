@@ -68,31 +68,29 @@ To improve contextual understanding, a transformer-based model was fine-tuned.
 This shows better semantic and contextual understanding compared to traditional ML models.
 
 ---
-
 ## Project Structure
 
+```text
 smart-email-classifier/
 │
 ├── data/
-│ ├── raw/
-│ │ └── rows.csv.zip
-│ └── processed/
-│ └── cleaned_complaints.csv
+│   ├── raw/
+│   │   └── rows.csv.zip
+│   └── processed/
+│       └── cleaned_complaints.csv
 │
 ├── notebooks/
-│ ├── data_preprocessing.ipynb
-│ ├── email_classification.ipynb
-│ └── email_classification_distilbert.ipynb
+│   ├── data_preprocessing.ipynb
+│   ├── email_classification.ipynb
+│   └── email_classification_distilbert.ipynb
 │
 ├── reports/
-│ └── Milestone_1_Report.pdf
+│   └── Milestone_1_Report.pdf
 │
 ├── .gitattributes
 ├── LICENSE
 └── README.md
-
-
-
+```
 ---
 
 ## Key Learnings
