@@ -70,10 +70,12 @@ This shows better semantic and contextual understanding compared to traditional 
 ---
 
 ## Project Structure
+
 smart-email-classifier/
 │
 ├── data/
 │ ├── raw/
+│ │ └── rows.csv.zip
 │ └── processed/
 │ └── cleaned_complaints.csv
 │
@@ -85,8 +87,11 @@ smart-email-classifier/
 ├── reports/
 │ └── Milestone_1_Report.pdf
 │
+├── .gitattributes
 ├── LICENSE
 └── README.md
+
+
 
 ---
 
