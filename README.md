@@ -125,3 +125,31 @@ The DistilBERT model enhances contextual understanding and provides a scalable s
 - Add accuracy, precision, recall, and F1-score for transformer model
 - Experiment with larger models like BERT or RoBERTa
 - Deploy the model as a REST API or web application
+
+### 🔹 Milestone 3: Urgency Detection & Scoring 
+
+#### Objective
+Implement an urgency detection module to identify and prioritize critical customer emails by assigning urgency levels.
+
+#### Tasks Completed
+- Trained an urgency classification model using machine learning techniques.
+- Identified urgency signals using keyword-based rules (e.g., urgent, asap, not working).
+- Combined machine learning predictions with rule-based keyword detection for improved accuracy.
+- Generated a final urgency score by merging ML probability and keyword-based urgency signals.
+- Validated urgency predictions using sample outputs and evaluation metrics.
+
+#### Implementation Details
+- Implemented urgency detection logic in `urgency_detection.ipynb`.
+- Used ML probability scores along with keyword weighting to calculate the final urgency score.
+- Created a final dataframe containing:
+  - Email text  
+  - Actual urgency  
+  - ML probability  
+  - Final urgency score  
+
+#### Output
+- Successfully assigned urgency levels (High / Medium / Low) to customer emails.
+- The urgency detection module is ready for integration with classification and dashboard components.
+
+**Milestone 3 has been successfully completed.**
+
