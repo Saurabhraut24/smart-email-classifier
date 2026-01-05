@@ -1,4 +1,18 @@
 # Smart Email Classifier
+## Milestone 1 – Data Collection & Preprocessing
+
+In Milestone 1, we focused on collecting and preprocessing the dataset required for training
+the email classification model.
+
+### Key Steps
+- Collected Consumer Complaint Dataset from Kaggle
+- Removed missing complaint narratives
+- Selected relevant columns (text, category, subcategory)
+- Performed text cleaning (lowercasing, stopwords removal, punctuation removal)
+- Generated final cleaned dataset: `cleaned_complaints.csv`
+
+📄 Detailed report is available in:
+`reports/Milestone_1_Report.pdf`
 
 ## Smart Email Classification – Milestone 2
 
