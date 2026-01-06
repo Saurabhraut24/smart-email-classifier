@@ -102,7 +102,7 @@ The DistilBERT model enhances contextual understanding and provides a scalable s
 - Experiment with larger models like BERT or RoBERTa
 - Deploy the model as a REST API or web application
 
-### 🔹 Milestone 3: Urgency Detection & Scoring 
+## 🔹 Milestone 3: Urgency Detection & Scoring 
 
 #### Objective
 Implement an urgency detection module to identify and prioritize critical customer emails by assigning urgency levels.
