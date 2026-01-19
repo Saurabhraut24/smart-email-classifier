@@ -12,7 +12,7 @@ st.title("Smart Email Classification System")
 st.write("AI Powered Email Categorization")
 st.divider()
 
-# ---------------- Load Model (FROM HUGGING FACE) ----------------
+# ---------------- Load Model (Lazy Loading) ----------------
 @st.cache_resource
 def load_model():
     model_name = "Saurabhraut123/distilbert-email-classifier"
@@ -23,7 +23,8 @@ def load_model():
     model.eval()
     return tokenizer, model
 
-tokenizer, model = load_model()
+# ❌ REMOVE this line (important)
+# tokenizer, model = load_model()
 
 # ---------------- Label Map ----------------
 label_map = {
@@ -46,17 +47,20 @@ if st.button("Classify Email"):
     if email_text.strip() == "":
         st.warning("Please enter email text before classification.")
     else:
-        inputs = tokenizer(
-            email_text,
-            return_tensors="pt",
-            truncation=True,
-            padding=True,
-            max_length=128
-        )
+        with st.spinner("Loading model and classifying..."):
+            tokenizer, model = load_model()   # ✅ load ONLY when needed
 
-        with torch.no_grad():
-            outputs = model(**inputs)
-            prediction = torch.argmax(outputs.logits, dim=1).item()
+            inputs = tokenizer(
+                email_text,
+                return_tensors="pt",
+                truncation=True,
+                padding=True,
+                max_length=128
+            )
+
+            with torch.no_grad():
+                outputs = model(**inputs)
+                prediction = torch.argmax(outputs.logits, dim=1).item()
 
         st.success(
             f"This email belongs to **{label_map[prediction]}** category."
