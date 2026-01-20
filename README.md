@@ -17,7 +17,7 @@ This project was developed as part of an **Infosys Internship Program** followin
 
 ## 🖼️ Project Preview
 <img width="1919" height="972" alt="image" src="https://github.com/user-attachments/assets/b08c7563-8c5e-4d35-9b0f-e873598eb0a3" />
----
+
 
 ## 📌 Project Overview
 
